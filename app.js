@@ -31,7 +31,7 @@ app.post("/parser", async (req, res) =>{
         
         await browser.close()
     }catch{
-        res.send("ХУЙНЯ")
+        res.send("error")
     }
 } )
 app.listen(5500, () => console.log("Server is running..."));
